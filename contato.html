@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgb(27, 27, 27);
+            padding: 20px;
+            border-radius: 5px;
+            color: aliceblue;
+        }
+
+        h1 {
+            text-align: center;
+            color: aliceblue;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #444;
+            color: white;
+        }
+
+        button {
+            background-color: rgb(79, 40, 116);
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: rgb(62, 18, 92);
+        }
+
+        header {
+            margin: 0;
+            background-color: #292929;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 18px;
+        }
+
+        header a:hover {
+            color: #b38dff;
+        }
+    </style>
+</head>
+
+    <body>
+        <header>
+            <a href="index.html">Nosso grupo</a>
+            <a href="meuportifolio.html">Julianny</a>
+            <a href="contato.html">Entre em contato</a>
+            <a href="aprendizados.html">Aprendizados</a>
+            <a href="depoimentos.html">Depoimentos</a>
+        </header>
+
+        <main>
+            <h1>Página de Contato</h1>
+            <i class="fa fa-whatsapp" style="font-size:24px; color: #ffffff;"></i>
+            <a href="https://wa.me/5588331703?text=fale%20comigo" target="_blank">Me chame pelo WhatsApp</a>
+
+            <section class="container">
+                <form action="mailto:albuquerque.julianny17@gmail.com" method="post" enctype="text/plain">
+                    <p>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Endereço de email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="assunto">Motivo do assunto:</label>
+                        <textarea id="assunto" name="assunto" rows="4" required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="telefone">Número de telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </p>
+
+                    <p>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar formulário</button>
+                    </p>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

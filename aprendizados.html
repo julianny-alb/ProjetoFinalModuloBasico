@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprendizados</title>
+
+  <style>  
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    header{
+      background-color: #292929;
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      text-decoration: none;
+      color: aliceblue;
+}
+    
+  </style>
+</head>
+<body>
+
+    <header>
+    <a href="index.html">Nosso grupo</a>
+    <a href="meuportifolio.html">Julianny</a>
+    <a href="contato.html">Entre em contato</a>
+    <a href="aprendizados.html">Aprendizados</a>
+    <a href="depoimentos.html">Depoimentos</a>
+  </header>
+
+  <section>
+    <h1>Aprendizado</h3>
+    <h3>🚀O que Aprendi com HTML, CSS e Git/GitHub</h3>
+    <p>Essas três ferramentas têm sido a base do meu aprendizado em desenvolvimento web:
+      HTML me ensinou a importância de uma estrutura bem definida. Aprendi a organizar títulos, seções, formulários e imagens em páginas com semântica e clareza.
+      Exemplo: criei uma página de depoimentos com seções bem estruturadas e responsivas.
+    </p>
+
+    <div class="codigo-exemplo">
+  <pre><code>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Minha Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Olá Mundo!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+  </code></pre>
+</div>
+
+    <p>CSS me ajudou a transformar estruturas simples em interfaces mais atrativas. Aprendi sobre estilização, alinhamentos com flexbox, cores, fontes e responsividade.
+      Exemplo: apliquei flex e gap para organizar o cabeçalho e usei cores neutras com tons pastéis, como gosto.
+    </p>
+    .exemplo-codigo {
+      background-color: #1e1e1e;
+      color: #f1f1f1;
+      padding: 50px;
+      border-radius: 8px;
+      margin-top: 0;
+      font-family: 'Courier New', monospace;
+    }
+
+    <p>Git e GitHub me ensinaram sobre controle de versões e colaboração. Aprendi a clonar repositórios, fazer commits, criar branches e publicar meus projetos online.
+      Exemplo: publiquei este próprio portfólio usando o GitHub Pages.
+    </p>
+    <ul>
+      <li>git init              # Cria um repositório local</li>
+      <li>git add .             # Adiciona todos os arquivos</li>
+      <li>git commit -m "Primeiro commit"  # Registra a mudança</li>
+      <li>git remote add origin https://github.com/seunome/repositorio.git</li>
+      <li>git push -u origin main         # Envia para o GitHub</li>
+    </ul>
+    
+    <h3>💬 Deixe seu comentário:</h3>
+    <form style="display: flex; flex-direction: column; max-width: 500px;">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required style="padding: 0.5rem; margin-bottom: 1rem;">
+
+      <label for="comentario">Comentário:</label>
+      <textarea id="comentario" name="comentario" rows="4" placeholder="Escreva aqui seu comentário" required style="padding: 0.5rem; margin-bottom: 1rem;"></textarea>
+
+      <button type="submit" style="background-color: #4caf50; color: white; padding: 0.7rem; border: none; border-radius: 4px; cursor: pointer;">
+        Enviar
+      </button>
+    </form>
+  </body>
+</html>

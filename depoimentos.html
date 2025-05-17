@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Depoimentos</title>
+  <style>
+    body{
+      background-color: black;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #depoimentos {
+      padding: 4rem 1rem;
+}
+
+#depoimentos h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #f0f0f0;
+}
+
+#depoimentos .subtitulo {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.depoimento {
+  display: flex;
+  align-items: flex-start;
+  background-color: #333333;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 100%;
+  gap: 1rem;
+}
+
+.foto-perfil {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.texto h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.texto p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.comentario {
+  margin-top: 3rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.comentario form {
+  margin: 0 auto;
+}
+
+header{
+  background-color: #292929;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+  </style>
+</head>
+<body>
+
+    <header>
+    <a href="index.html">Nosso grupo</a>
+    <a href="meuportifolio.html">Julianny</a>
+    <a href="contato.html">Entre em contato</a>
+    <a href="aprendizados.html">Aprendizados</a>
+    <a href="depoimentos.html">Depoimentos</a>
+  </header>
+
+  <section id="depoimentos">
+    <h2>Depoimentos</h2>
+
+    <div class="container">
+      <div class="depoimento">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Usuária 1" class="foto-perfil">
+        <div class="texto">
+          <h4>Mariana Souza</h4>
+          <p>Amei o projeto! Simples, mas com uma estrutura bem organizada.</p>
+        </div>
+      </div>
+
+      <div class="depoimento">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Usuário 2" class="foto-perfil">
+        <div class="texto">
+          <h4>João Henrique</h4>
+          <p>Gostei bastante do layout e da proposta.</p>
+        </div>
+      </div>
+
+      <div class="depoimento">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Usuária 3" class="foto-perfil">
+        <div class="texto">
+          <h4>Larissa Lima</h4>
+          <p>Trabalho bem feito.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="comentario">
+      <h3>💬 Deixe seu comentário:</h3>
+      <form style="display: flex; flex-direction: column; max-width: 500px;">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required style="padding: 0.5rem; margin-bottom: 1rem;">
+
+        <label for="comentario">Comentário:</label><br>
+        <textarea id="comentario" name="comentario" rows="4" placeholder="Escreva aqui seu comentário" required style="padding: 0.5rem; margin-bottom: 1rem;"></textarea>
+
+        <button type="submit" style="background-color: #4caf50; color: white; padding: 0.7rem; border: none; border-radius: 4px; cursor: pointer;">Enviar</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
